@@ -1,0 +1,58 @@
+<div class="container" [class.active]="isActive">
+  <!-- Formulário de Cadastro -->
+  <div class="form-container sign-up">
+    <form (submit)="onSignUp($event)">
+      <h1>Create Account</h1>
+      <div class="social-icons">
+        <a href="#" class="icon"><fa-icon [icon]="faGoogle"></fa-icon></a>
+        <a href="#" class="icon"><fa-icon [icon]="faFacebook"></fa-icon></a>
+        <a href="#" class="icon"><fa-icon [icon]="faGithub"></fa-icon></a>
+        <a href="#" class="icon"><fa-icon [icon]="faLinkedin"></fa-icon></a>
+      </div>
+      <span>or use your email for registeration</span>
+      <input type="text" placeholder="Name" [(ngModel)]="signUpData.name" name="name">
+      <input type="email" placeholder="Email" [(ngModel)]="signUpData.email" name="email">
+      <input type="password" placeholder="Password" [(ngModel)]="signUpData.password" name="password">
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+  <!-- Formulário de Login -->
+  <div class="form-container sign-in">
+    <form (submit)="onSignIn($event)">
+      <h1>Sign In</h1>
+      <div class="social-icons">
+        <a href="#" class="icon"><fa-icon [icon]="faGoogle"></fa-icon></a>
+        <a href="#" class="icon"><fa-icon [icon]="faFacebook"></fa-icon></a>
+        <a href="#" class="icon"><fa-icon [icon]="faGithub"></fa-icon></a>
+        <a href="#" class="icon"><fa-icon [icon]="faLinkedin"></fa-icon></a>
+      </div>
+      <span>or use your email password</span>
+      <input type="email" placeholder="Email" [(ngModel)]="signInData.email" name="loginEmail">
+      <input type="password" placeholder="Password" [(ngModel)]="signInData.password" name="loginPassword">
+      <a href="#">Forget Your Password?</a>
+      <button type="submit">Sign In</button>
+    </form>
+  </div>
+
+  <!-- Painel de Alternância -->
+  <div class="toggle-container">
+    <div class="toggle">
+      <div class="toggle-panel toggle-left">
+        <h1>Welcome Back!</h1>
+        <p>Enter your personal details to use all of site features</p>
+        <button class="hidden" (click)="toggleActive(false)">Sign In</button>
+      </div>
+      <div class="toggle-panel toggle-right">
+        <h1>Hello, Friend!</h1>
+        <p>Register with your personal details to use all of site features</p>
+        <button class="hidden" (click)="toggleActive(true)">Sign Up</button>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="errorMessage" class="error-message">
+  {{ errorMessage }}
+</div>
+
+</div>
