@@ -38,7 +38,7 @@ def register():
     usuarios = carregar_usuarios()
     
     if any(u['email'] == data['email'] for u in usuarios):
-        return jsonify({'success': False, 'message': 'Email já cadastrado'}), 409
+        return jsonify({'success': False, 'message': 'Email já cadastrado'}), 409 
     
     usuarios.append({
         'name': data['name'],
