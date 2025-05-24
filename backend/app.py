@@ -6,7 +6,7 @@ from pathlib import Path
 import hashlib
 
 app = Flask(__name__)
-CORS(app)  # Habilita CORS
+CORS(app)  # Habilita CORS 
 
 # Configuração do arquivo JSON
 ARQUIVO_USUARIOS = Path('database/usuarios.json')

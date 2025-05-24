@@ -6,7 +6,7 @@ import { tap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
-})
+}) 
 export class AuthService {
   private apiUrl = 'http://localhost:5000/api'; // Ajuste a porta se necessário
 

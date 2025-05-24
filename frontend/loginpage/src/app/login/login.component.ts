@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 
 
 
-@Component({
+@Component({ 
   selector: 'app-login',
   standalone: true,
   imports: [FormsModule, FontAwesomeModule, CommonModule],

@@ -5,7 +5,7 @@ import { provideClientHydration, withEventReplay } from '@angular/platform-brows
 import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { AuthInterceptor } from './services/auth.interceptor';  
 
-export const appConfig: ApplicationConfig = {
+export const appConfig: ApplicationConfig = { 
   providers: [provideZoneChangeDetection({ eventCoalescing: true }), 
     provideRouter(routes),
      provideClientHydration(withEventReplay()),
