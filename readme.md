@@ -39,7 +39,12 @@ python app.py
 ### 2. Frontend (Angular)
 ```bash
 cd frontend/loginpage
+```
+```bash
 npm install
+```
+
+```bash
 ng serve
 
 ```
