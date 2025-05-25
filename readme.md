@@ -30,12 +30,12 @@ Este projeto tem como objetivo demonstrar a construção de um sistema de login 
 
 ```bash
 cd backend
-python -m venv venv
-venv\Scripts\activate     
+```
 
-pip install -r requirements.txt
+```bash
 python app.py
 ```
+
 ### 2. Frontend (Angular)
 ```bash
 cd frontend/loginpage
