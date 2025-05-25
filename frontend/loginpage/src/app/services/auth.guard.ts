@@ -4,7 +4,7 @@ import { CanActivate, Router } from '@angular/router';
 import { AuthService } from './auth.service';
  
 @Injectable({
-  providedIn: 'root' // Isso é essencial para standalone
+  providedIn: 'root' 
 })
 export class AuthGuard implements CanActivate {
   constructor(
