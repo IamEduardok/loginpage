@@ -11,7 +11,7 @@
 
 Este projeto tem como objetivo demonstrar a construção de um sistema de login com autenticação de usuários utilizando tecnologias modernas de frontend e backend. O foco principal é mostrar como integrar um aplicativo Angular com uma API REST construída em Flask, simulando uma autenticação real com persistência de dados.
 
-É ideal para quem está aprendendo a construir aplicações fullstack e deseja entender como o frontend e o backend podem se comunicar de forma segura, mesmo em aplicações simples.
+
 
 
 ---
